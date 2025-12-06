@@ -70,41 +70,41 @@ import numpy as np
 # print(d)
 
 
-# try:
-#     a = float(input('Enter the score: '))
+try:
+    a = float(input('Enter the score: '))
 
-#     if not (0.0 < a <= 1.0):
-#         print('Please enter a value between 0.0 and 1.0')
-#     elif a >= 0.9:
-#         print('Grade: A')
-#     elif a >= 0.8:
-#         print('Grade: B')
-#     elif a >= 0.7:
-#         print('Grade: C')
-#     else:
-#         print('Grade below C')
+    if not (0.0 < a <= 1.0):
+        print('Please enter a value between 0.0 and 1.0')
+    elif a >= 0.9:
+        print('Grade: A')
+    elif a >= 0.8:
+        print('Grade: B')
+    elif a >= 0.7:
+        print('Grade: C')
+    else:
+        print('Grade below C')
 
-# except ValueError:
-#     print('Invalid input! Please enter a number.')
+except ValueError:
+    print('Invalid input! Please enter a number.')
 
 
-# def computepay(hours, rate):
-#     if hours > 40:
-#         regular_pay = 40 * rate
-#         overtime_pay = (hours - 40) * 1.5 * rate
-#         return regular_pay + overtime_pay
-#     else:
-#         return hours * rate
+def computepay(hours, rate):
+    if hours > 40:
+        regular_pay = 40 * rate
+        overtime_pay = (hours - 40) * 1.5 * rate
+        return regular_pay + overtime_pay
+    else:
+        return hours * rate
 
-# try:
-#     hours = float(input("Enter hours: "))
-#     rate = float(input("Enter rate: "))
+try:
+    hours = float(input("Enter hours: "))
+    rate = float(input("Enter rate: "))
 
-#     grosspay = computepay(hours, rate)
-#     print(f"Gross pay:",grosspay)
+    grosspay = computepay(hours, rate)
+    print(f"Gross pay:",grosspay)
 
-# except ValueError:
-#     print("Invalid input! Please enter numeric values for hours and rate.")
+except ValueError:
+    print("Invalid input! Please enter numeric values for hours and rate.")
 
 result = []
 while True:
