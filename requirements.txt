@@ -1,0 +1,5 @@
+qrcode
+pillow
+matplotlib
+numpy
+flask
